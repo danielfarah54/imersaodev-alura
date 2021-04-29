@@ -7,6 +7,7 @@ var operacao = prompt("Digite 1 para divisão, 2 para multiplicação, 3 para so
 if(operacao == 1){
   resultado = primeiroValor / segundoValor
   document.write("<h2>" + primeiroValor + " / " + segundoValor + " = " + resultado + "</h2>")
+  alert(primeiroValor + " / " + segundoValor + " = " + resultado)
 }
 else if(operacao == 2){
   resultado = primeiroValor * segundoValor
