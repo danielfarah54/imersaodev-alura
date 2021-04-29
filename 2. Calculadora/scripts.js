@@ -12,14 +12,19 @@ if(operacao == 1){
 else if(operacao == 2){
   resultado = primeiroValor * segundoValor
   document.write("<h2>" + primeiroValor + " x " + segundoValor + " = " + resultado + "</h2>")
+  alert(primeiroValor + " x " + segundoValor + " = " + resultado)
 }
 else if(operacao == 3){
   resultado = primeiroValor + segundoValor
   document.write("<h2>" + primeiroValor + " + " + segundoValor + " = " + resultado + "</h2>")
+  alert(primeiroValor + " + " + segundoValor + " = " + resultado)
 }
 else if(operacao == 4){
   resultado = primeiroValor - segundoValor
   document.write("<h2>" + primeiroValor + " - " + segundoValor + " = " + resultado + "</h2>")
+  alert(primeiroValor + " - " + segundoValor + " = " + resultado)
 }
-else
+else{
   document.write("<h2>Opção inválida</h2>")
+  alert("Opção inválida")
+}
