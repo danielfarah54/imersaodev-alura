@@ -1,3 +1,5 @@
 # Alura - imersao.dev
 
-Repositódio para os projetos feitos na imersão dev da Alura
+Repositódio para os projetos feitos na imersao.dev 2021 da Alura
+
+[Certificado com link dos projetos](https://danielfarah54.github.io/imersaodev-alura-certificado/)
