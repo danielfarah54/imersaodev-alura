@@ -1,9 +1,9 @@
-var primeiroValor = parseInt(prompt("Digite o primeiro valor:"))
-var segundoValor = parseInt(prompt("Digite o segundo valor:"))
+//var primeiroValor = parseInt(prompt("Digite o primeiro valor:"))
+//var segundoValor = parseInt(prompt("Digite o segundo valor:"))
 
 var resultado
 var h2 = document.getElementById('resultado')
-var operacao = prompt("Digite 1 para divisão, 2 para multiplicação, 3 para soma ou 4 para subtração:")
+//var operacao = prompt("Digite 1 para divisão, 2 para multiplicação, 3 para soma ou 4 para subtração:")
 
 if(operacao == 1){
   resultado = primeiroValor / segundoValor
