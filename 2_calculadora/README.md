@@ -1,4 +1,4 @@
 ## TODO
 
-* criar botões
-* correção da integração js/html
+* ~~criar botões~~
+* ~~correção da integração js/html~~
