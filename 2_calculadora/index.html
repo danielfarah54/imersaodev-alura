@@ -9,19 +9,81 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="page-title">
-            Calculadora
-        </h1>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
-            alt="">
-        <div class="calculadora">
-        </div>
+  <div class="container">
+    <h1 class="page-title">
+      Calculadora
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo" alt="">
+    <div class="calculadora">
     </div>
-    <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
-    <h2></h2>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  <form name='calculator'>
+		<table>
+			<tr>
+				<td colspan="4">
+					<input type='text' name='display' id='display' disabled>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type='button' name='one' value='1' onclick="mostraUm()">
+				</td>
+				<td>
+					<input type='button' name='two' value='2' onclick="mostraDois()">
+				</td>
+				<td>
+					<input type='button' name='three' value='3' onclick="mostraTres()">
+				</td>
+				<td>
+					<input type='button' class='operator' name='plus' value='+' onclick="mostraMais()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type='button' name='four' value='4' onclick="mostraQuatro()">
+				</td>
+				<td>
+					<input type='button' name='five' value='5' onclick="mostraCinco()">
+				</td>
+				<td>
+					<input type='button' name='six' value='6' onclick="mostraSeis()">
+				</td>
+				<td>
+					<input type='button' class='operator' name='minus' value='-' onclick="mostraMenos()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type='button' name='seven' value='7' onclick="mostraSete()">
+				</td>
+				<td>
+					<input type='button' name='eight' value='8' onclick="mostraOito()">
+				</td>
+				<td>
+					<input type='button' name='nine' value='9' onclick="mostraNove()">
+				</td>
+				<td>
+					<input type='button' class='operator' name='times' value='x' onclick="mostraVezes()">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type='button' id='clear' name='clear' value='c' onclick="limpaTela()">
+				</td>
+				<td>
+					<input type='button' name='zero' value='0' onclick="mostraZero()">
+				</td>
+				<td>
+					<input type='button' name='equal' value='=' onclick="calculaTotal()">
+				</td>
+				<td>
+					<input type='button' class='operator' name='div' value='/' onclick="mostraDiv()">
+				</td>
+			</tr>
+		</table>
+	</form>
 </body>
-
 </html>

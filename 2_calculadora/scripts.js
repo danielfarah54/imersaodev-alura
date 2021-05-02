@@ -1,30 +1,63 @@
-var primeiroValor = parseInt(prompt("Digite o primeiro valor:"))
-var segundoValor = parseInt(prompt("Digite o segundo valor:"))
+function mostraUm() {
+	calculator.display.value += '1'
+}
 
-var resultado
-var operacao = prompt("Digite 1 para divisão, 2 para multiplicação, 3 para soma ou 4 para subtração:")
+function mostraDois() {
+	calculator.display.value += '2'
+}
 
-if(operacao == 1){
-  resultado = primeiroValor / segundoValor
-  document.write("<h2>" + primeiroValor + " / " + segundoValor + " = " + resultado + "</h2>")
-  alert(primeiroValor + " / " + segundoValor + " = " + resultado)
+function mostraTres() {
+	calculator.display.value += '3'
 }
-else if(operacao == 2){
-  resultado = primeiroValor * segundoValor
-  document.write("<h2>" + primeiroValor + " x " + segundoValor + " = " + resultado + "</h2>")
-  alert(primeiroValor + " x " + segundoValor + " = " + resultado)
+
+function mostraQuatro() {
+	calculator.display.value += '4'
 }
-else if(operacao == 3){
-  resultado = primeiroValor + segundoValor
-  document.write("<h2>" + primeiroValor + " + " + segundoValor + " = " + resultado + "</h2>")
-  alert(primeiroValor + " + " + segundoValor + " = " + resultado)
+
+function mostraCinco() {
+	calculator.display.value += '5'
 }
-else if(operacao == 4){
-  resultado = primeiroValor - segundoValor
-  document.write("<h2>" + primeiroValor + " - " + segundoValor + " = " + resultado + "</h2>")
-  alert(primeiroValor + " - " + segundoValor + " = " + resultado)
+
+function mostraSeis() {
+	calculator.display.value += '6'
 }
-else{
-  document.write("<h2>Opção inválida</h2>")
-  alert("Opção inválida")
+
+function mostraSete() {
+	calculator.display.value += '7'
+}
+
+function mostraOito() {
+	calculator.display.value += '8'
+}
+
+function mostraNove() {
+	calculator.display.value += '9'
+}
+
+function mostraZero() {
+	calculator.display.value += '0'
+}
+
+function mostraMais() {
+	calculator.display.value += '+'
+}
+
+function mostraMenos() {
+	calculator.display.value += '-'
+}
+
+function mostraVezes() {
+	calculator.display.value += '*'
+}
+
+function mostraDiv() {
+	calculator.display.value += '/'
+}
+
+function limpaTela() {
+	calculator.display.value = ''
+}
+
+function calculaTotal() {
+	calculator.display.value = eval(calculator.display.value)
 }
