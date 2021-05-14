@@ -31,7 +31,7 @@ header {
 
 div {
 	-webkit-box-shadow: 5px 5px 50px 8px rgba(0,0,0,0.4); 
-box-shadow: 5px 5px 50px 8px rgba(0,0,0,0.33);
+	box-shadow: 5px 5px 50px 8px rgba(0,0,0,0.33);
 }
 
 #insignias {
