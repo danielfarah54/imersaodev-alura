@@ -4,3 +4,5 @@
 * ~~criar botão de enviar~~
 * criar interface de número de tentativas
 * criar placar de acertos e erros
+* trocar background
+* terminar estilização
