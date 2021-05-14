@@ -1,9 +1,9 @@
 <html>
 <head>
-    <!-- <link rel="stylesheet" href="https://danielfarah54.github.io/imersaodev-alura/3_mentalista/styles.css"/> -->
-    <!-- <script src="https://danielfarah54.github.io/imersaodev-alura/3_mentalista/scripts.js"></script> -->
-    <link rel="stylesheet" href="styles.css"/>
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://danielfarah54.github.io/imersaodev-alura/3_mentalista/styles.css"/>
+    <script src="https://danielfarah54.github.io/imersaodev-alura/3_mentalista/scripts.js"></script>
+    <!-- <link rel="stylesheet" href="styles.css"/> -->
+    <!-- <script src="scripts.js"></script> -->
   
     <title>
         Imersão Dev - Aula 03
@@ -18,14 +18,16 @@
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt="">
         <br>
         <form>
+            <button type="button" id="btnJogar" onclick="jogar()">Jogar!</button>
             <div id="areaChute">
                 <label for="chute" class="page-subtitle">
                     Digite um número entre 0 e 9:
                 </label>
                 <br>
-                <input type="number" id="chute" min="0" max="9" required="true">
+                <input type="number" id="chute" min="0" max="9" required="true" disabled="true">
                 <br>
-                <input type="submit" id="btnChutar" value="Chutar!">
+                <button type="button" onclick="chutar()" id="btnChutar" disabled="true">Chutar!</button>
+                <button type="button" onclick="resetar()" id="btnReset" disabled="true">Recomeçar!</button>
             </div>
         </form>
         <div id="resultado"></div>

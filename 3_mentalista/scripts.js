@@ -1,28 +1,44 @@
-var numeroSecreto = parseInt(Math.random() * 10)
-// var numeroSecreto = 3
-// console.log(numeroSecreto)
-var tentativas = 3
-var acertou = false
+var divResultado = ''
+var html = ''
 
-while(tentativas > 0 && !acertou) {
-    // var chute = parseInt(prompt("Digite um número entre 0 e 10:"))
+function chutar() {
+    var chute = document.getElementById("chute").value
 
     if(numeroSecreto == chute) {
-        // console.log("Acertou")
-        // alert("Acertou")
-        // break
-        acertou = true
+        html = '<div id="resultado">Acertou!</div>'
+        document.getElementById('btnChutar').disabled = true
     } else if(chute > numeroSecreto) {
-        // console.log("O número secreto é menor")
-        // alert("O número secreto é menor")
+        html = '<div id="resultado">O número secreto é menor</div>'
         tentativas -= 1
-    } else if(chute < numeroSecreto) {
-        // console.log("O número secreto é maior")
-        // alert("O número secreto é maior")
+    } else {
+        html = '<div id="resultado">O número secreto é maior</div>'
         tentativas -= 1
     }
+
+    if(tentativas == 0 && chute != numeroSecreto) {
+        document.getElementById('btnChutar').disabled = true
+        html = '<div id="resultado">Suas tentativas acabaram.<br>O número secreto era <span id="numeroSecreto">'
+        html += numeroSecreto + '</span></div>'
+    }
+    divResultado.innerHTML = html
 }
 
-if(chute != numeroSecreto) {
-    // alert("Suas tentativas acabaram. O número secreto era " + numeroSecreto)
+function jogar() {
+    document.getElementById('btnReset').disabled = false
+    document.getElementById('btnJogar').disabled = true
+    document.getElementById('chute').disabled = false
+    resetar()
+    divResultado = document.getElementById("resultado")
+}
+
+function resetar() {
+    document.getElementById('btnChutar').disabled = false
+    tentativas = 3
+    numeroSecreto = gerarNumeroSecreto()
+    divResultado.innerHTML = ''
+}
+
+function gerarNumeroSecreto() {
+    var numero = parseInt(Math.random() * 10)
+    return numero
 }
