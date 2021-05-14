@@ -6,37 +6,45 @@ body {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-  }
+}
   
-  .container {
+.container {
     text-align: center;
     padding: 20px;
     height: 100vh;
-  }
+}
   
-  .page-title {
+.page-title {
     color: #ffffff;
     margin: 0 0 5px;
-  }
+}
   
-  .page-subtitle {
+.page-subtitle {
     color: #ffffff;
     margin-top: 5px;
-  }
+}
+
+#areaChute {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+
+}
   
-  .page-logo {
+.page-logo {
     width: 200px;
-  }
+}
   
-  .alura-logo {
+.alura-logo {
     width: 40px;
     position: absolute;
     top: 10px;
     right:10px;
-  }
+}
   
-  @media (max-height: 500px) {
+@media (max-height: 500px) {
     body {
-      min-height:800px;
+        min-height:800px;
     }
-  }
+}
